@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class SumQuiz {
+    public static void main(String[] charles){
+
+        Random rand = new Random();
+
+        int num1 = rand.nextInt(101);
+        int num2 = rand.nextInt(101);
+
+        Scanner sum = new Scanner(System.in);
+        System.out.println("What is the Sum of "+ num1 + " and " + num2);
+
+        int userAnswer = sum.nextInt();
+
+        if (userAnswer == num1 + num2){
+            System.out.println("Correct answer!");
+        }
+        else {
+            System.out.println("Wrong answer!. The correct answer is " + (num1 + num2));
+        }
+    }
+}
